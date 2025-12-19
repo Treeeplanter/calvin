@@ -1,22 +1,22 @@
 cmake
 wheel
 numpy>1.2
-hydra-core==1.1.1
+# hydra-core==1.1.1  # version conflict, use newer version
 hydra-colorlog
 matplotlib
 opencv-python
 omegaconf
 plotly
-pyhash
-pytorch-lightning==1.8.6
-lightning_lite
-torch==1.13.1
-torchvision
-MulticoreTSNE
+# pyhash  # not compatible with Python 3.12
+pytorch-lightning
+# lightning_lite  # deprecated
+# torch==1.13.1  # use existing torch version
+# torchvision  # use existing version
+# MulticoreTSNE  # optional, can cause issues
 gitpython
 scipy
 sentence-transformers
-setuptools==57.5.0
+# setuptools==57.5.0  # not compatible with Python 3.12
 gym
 moviepy
 tqdm
